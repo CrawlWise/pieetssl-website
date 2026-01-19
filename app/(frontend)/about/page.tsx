@@ -37,12 +37,12 @@ export default function Page() {
       </section>
 
       <section className="our-core-values bg-blue-900 pt-6">
-        <div className="title-desc w-1/2 text-center mx-auto">
+        <div className="title-desc text-center mx-auto">
           <h1 className='h1 !text-white text-center'>{aboutOurValues.title}</h1>
-          <p className='text-center text-white'>{aboutOurValues.description}</p>
+          <p className='text-center text-white px-6'>{aboutOurValues.description}</p>
         </div>
 
-        <div className="inner-container place-items-center ">
+        <div className="inner-container !p-2 place-items-center ">
           <OurValues valuesData={aboutOurValues} />
         </div>
       </section>
