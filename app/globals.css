@@ -1,0 +1,111 @@
+@import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #4169E1;
+  --third-color: #2ecc71;
+  /* Neutral & semantic tokens mapped to existing palette (no color changes) */
+  --color-white: #ffffff;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-blue-500: var(--primary-color);
+  --radius-md: 0.375rem;
+  --radius-xl: 0.75rem;
+}
+
+
+
+/* Webfont declarations: prefer explicit weight files and use font-display for better UX */
+@font-face {
+  font-family: 'Work Sans';
+  src: url("/fonts/work-sans/WorkSans-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  /* If you have a 500/medium file, replace this path with the correct filename (e.g. WorkSans-Medium.ttf) */
+  src: url("/fonts/work-sans/WorkSans-Medium.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font variable and utility to ensure `className="font-WorkSans"` works */
+:root {
+  --font-WorkSans: 'Work Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.font-WorkSans {
+  font-family: var(--font-WorkSans);
+}
+
+
+/* Apply Work Sans globally (optional — keeps layout.tsx behavior consistent) */
+html, body {
+  font-family: var(--font-WorkSans);
+}
+
+/* Utility classes */
+@layer utilities {
+  .h1 {
+    @apply lg:text-3xl md:text-2xl text-xl font-bold text-white;
+  }
+
+  .h2 {
+    @apply lg:text-2xl md:text-xl font-bold text-white;
+  }
+
+  .h3 {
+    @apply lg:text-xl text-[18px] font-bold text-white;
+  }
+
+  .h1-headings {
+    @apply text-5xl font-bold text-blue-500;
+  }
+
+  .inner-container {
+    @apply w-5/5 mx-auto lg:p-8 p-2;
+  }
+
+  .btn-primary {
+    @apply bg-[var(--primary-color)] hover:bg-[var(--third-color)] text-white py-2 px-4 rounded-md transition;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-gray-800 px-6 py-3 rounded-xl shadow-md border hover:bg-gray-100 transition;
+  }
+
+  .btn-underline {
+    @apply text-blue-600 underline hover:text-blue-800
+  }
+
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* form styles */
+ .form-input {
+  @apply block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 shadow-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--primary-color)] hover:shadow-sm;
+}
+
+.form-label {
+  @apply block font-medium text-gray-900;
+}
+
+.form-textarea {
+  @apply block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--primary-color)] hover:shadow-sm;
+}
+
+}

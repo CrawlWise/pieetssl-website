@@ -1,0 +1,30 @@
+.social-media-icons {
+  background-color: #3498db;
+  padding: 0.6rem;          /* Use rem for scalable padding */
+  border-radius: 50%;       /* Circle shape */
+  cursor: pointer;
+  display: inline-flex;     /* center icon inside */
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.25rem;       /* control icon size */
+  color: white;
+}
+
+/* Hover & focus states for better UX */
+.social-media-icons:hover,
+.social-media-icons:focus {
+  background-color: #2980b9;
+  transform: scale(1.1);
+  outline: none;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  .social-media-icons {
+    padding: 0.3rem;
+    font-size: 1rem;
+    width: 20px;         /* Fixed width for smaller screens */
+    height: 20px;        /* Fixed height for smaller screens */
+  }
+}

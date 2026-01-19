@@ -1,0 +1,35 @@
+/* Carousel.css */
+.embla {
+  width: 100%;
+  overflow: hidden;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  will-change: transform;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+
+/* Navigation buttons */
+.embla__prev,
+.embla__next {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 9999px;
+}
+
+.embla__prev:hover,
+.embla__next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
