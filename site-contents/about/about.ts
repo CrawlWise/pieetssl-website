@@ -9,7 +9,7 @@ export const aboutBanner: bannerType = {
 export const About: aboutType = {
   contents: {
       title: "About Us",
-      img: "/home/h-1.jpg",
+      img: "/home/h-1.jpeg",
       alt: "About Image",
       content: ["Welcome to PIEETS Senior Living, where we redefine senior living by providing exceptional care in an elegant, home-like setting. We believe seniors deserve to live with dignity, comfort, and personalized attention. Our dedicated team is committed to creating a nurturing environment where residents thrive. Highlight key differentiators: personalized care, luxurious accommodations, professional nursing staff, home-cooked meals."]
     }
