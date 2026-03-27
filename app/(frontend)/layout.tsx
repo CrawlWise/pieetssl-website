@@ -6,9 +6,13 @@ import HeaderInfo from "@/components/Header/HeaderInfo";
 import Footer from '@/components/Footer/Footer';
 import "../globals.css"
 import AOSInitializer  from '../../components/js/AOSInitializer';
+
 export const metadata = {
   title: 'Pieets Senior Living',
   description: 'The best Pieets Senior Living Website',
+  icons: {
+    icon: "/logo.ico",
+  },
 };
 
 
